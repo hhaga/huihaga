@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bryllupsside</title>
+  <%= stylesheet_link_tag 'scaffold' %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+	<a href="/">Hjem</a>
+	<a href="/greetings">Gjestebok</a>
+	<a href="/pages/om">Om oss</a>
+	<a href="/pages/vielse">Vielse</a>
+	<a href="/pages/info">Nyttig info</a>
+	<a href="/pages/liste">Ønskeliste</a>
+
+	<br>
+
+<%= yield %>
+
+</body>
+</html>

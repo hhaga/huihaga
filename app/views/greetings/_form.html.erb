@@ -1,0 +1,23 @@
+<%unless @greeting then @greeting = Greeting.new end%>
+<%= form_for(@greeting) do |f| %>
+  <% if @greeting.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@greeting.errors.count, "error") %> prohibited this greeting from being saved:</h2>
+
+      <ul>
+      <% @greeting.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    Skriv i gjesteboka<br />
+    <%= f.text_area :body, :cols => 40, :rows => 5%>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Legg til"%>
+  </div>
+<% end %>

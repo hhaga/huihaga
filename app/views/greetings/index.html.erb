@@ -1,0 +1,20 @@
+<h1>Gjestebok</h1>
+
+<%= render 'form' %>
+
+
+
+<% @greetings.each do |greeting| %>
+
+	<% div_for greeting do %>
+		Innlegg skrevet <%= greeting.when %>
+		<%= link_to 'Fjern innlegg', greeting, :confirm => 'Are you sure?', :method => :delete %>
+		<p>
+			<%= greeting.body %>
+			
+		</p>
+	<% end %>
+<% end %>
+
+
+<br />
