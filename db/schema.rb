@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110618134946) do
+ActiveRecord::Schema.define(:version => 20110911094946) do
 
   create_table "greetings", :force => true do |t|
     t.string   "header"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(:version => 20110618134946) do
     t.date     "when"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "author",     :limit => nil
   end
 
 end

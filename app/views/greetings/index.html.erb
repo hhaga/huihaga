@@ -7,8 +7,8 @@
 <% @greetings.each do |greeting| %>
 
 	<% div_for greeting do %>
-		Innlegg skrevet <%= greeting.when %>
-		<%= link_to 'Fjern innlegg', greeting, :confirm => 'Are you sure?', :method => :delete %>
+		Innlegg skrevet <%= greeting.when %> av <%= greeting.author %><br/>
+		<%= link_to 'Fjern innlegg', greeting, :confirm => 'Er du sikker på at du vil fjerne innlegget?', :method => :delete %>
 		<p>
 			<%= greeting.body %>
 			

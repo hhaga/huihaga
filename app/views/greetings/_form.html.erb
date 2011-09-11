@@ -14,7 +14,8 @@
 
   <div class="field">
     Skriv i gjesteboka<br />
-    <%= f.text_area :body, :cols => 40, :rows => 5%>
+		<%= f.text_field :author, :placeholder => "Skriv navnet ditt" %>
+    <%= f.text_area :body, :cols => 40, :rows => 5, :placeholder => "Skriv ei helsing" %>
   </div>
 
   <div class="actions">

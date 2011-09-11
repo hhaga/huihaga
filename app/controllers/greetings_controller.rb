@@ -1,4 +1,8 @@
 class GreetingsController < ApplicationController
+  
+  before_filter :authenticate, :except => [:index, :show, :new, :create]
+  
+  
   # GET /greetings
   # GET /greetings.xml
   def index
@@ -46,7 +50,7 @@ class GreetingsController < ApplicationController
     respond_to do |format|
       if @greeting.save
         format.html { redirect_to(greetings_path)}
-        format.js
+        #format.js
       end
     end
   end
@@ -76,6 +80,14 @@ class GreetingsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(greetings_url) }
       format.xml  { head :ok }
+    end
+  end
+  
+  private
+  
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+      username == "admin" && password == "secret123"
     end
   end
 end
