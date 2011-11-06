@@ -7,16 +7,52 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-	<a href="/">Hjem</a>
-	<a href="/greetings">Gjestebok</a>
-	<a href="/pages/om">Om oss</a>
-	<a href="/pages/vielse">Vielse</a>
-	<a href="/pages/info">Nyttig info</a>
-	<a href="/pages/liste">Ønskeliste</a>
-
-	<br>
-
-<%= yield %>
-
+	<div >
+		<table class="header">
+			<tr>
+				<td>
+					<%=image_tag ("hjerte.gif") %>
+				</td>
+				<td class="text">
+					<p><font size="7" face="Apple Chancery">Bryllupsside</font></p>
+					<p><font size="6" face="Apple Chancery">Katherine &amp; Håkon </font></p>
+				</td>		
+				<td align=right>
+					<%=image_tag ("hjerte_mirror.gif") %>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div>
+		<table class="links" cellspacing="0" cellpadding="0">
+			<tr>
+				<td valign="middle" align="center" style="background:url(/images/menubg.gif) repeat-x;">
+					<a href="/">Hjem</a>
+				</td>
+				<td valign="middle" align="center" style="background:url(/images/menubg.gif) repeat-x; padding-left:8px;">
+					<a href="/pages/forlovere">Forlovere</a>
+				</td>
+				<td valign="middle" align="center" style="background:url(/images/menubg.gif) repeat-x;">
+					<a href="/pages/program">Program</a>
+				</td>
+				<td valign="middle" align="center" style="background:url(/images/menubg.gif) repeat-x;">
+					<a href="/pages/toastmastere">Toastmastere</a>
+				</td>
+				<td valign="middle" align="center" style="background:url(/images/menubg.gif) repeat-x;">
+					<a href="/pages/info">Nyttig info</a>
+				</td>
+				<td valign="middle" align="center" style="background:url(/images/menubg.gif) repeat-x;">
+					<a href="/greetings">Gjestebok</a>
+				</td>
+				<td valign="middle" align="center" style="background:url(/images/menubg.gif) repeat-x;">
+					<a href="/pages/liste">Ønskeliste</a>
+				</td>
+			</tr>
+		</table>
+		<br>
+	</div>
+	<div class="body">
+		<%= yield %>
+	</div>
 </body>
 </html>

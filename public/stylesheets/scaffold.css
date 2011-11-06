@@ -7,20 +7,29 @@ html {
 	font-family: Veranda;
 	font-size: 13px;
 	line-height: 19.5px;
-	background-color: #000;
+	background-color: #f7e7ce;
+	/*background-color: #eadcc2;*/
 	background-repeat:no-repeat; 
 	background-position:center top;
 	margin-top: 20px;
-	padding-top: 60px;
 }
 
 body {
-	background-color: #fff;
+	background-color: #FFFFFF;
 	color: #000;
-	width: 600px;
+	width: 1000px;
+	height: 500px;
 	margin: 0 auto 30px auto;
-	padding: 30px;
+
 	border-radius: 5px;
+}
+
+
+.body {
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
 }
 
 h2 {
@@ -30,6 +39,24 @@ h2 {
 	font-weight: 400;
 	line-height: 33.8px;
 	margin-bottom: 10px;
+}
+
+.header {
+	/*color: #FFDAB9;*/
+	color: #977c46; /*samme farge som figur*/
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	
+}
+
+.header .text {
+	vertical-align: bottom;
+	align: center;
+	padding-bottom: 20px;
+	padding-left: 20px;
 }
 
 h1,h3 {
@@ -55,17 +82,25 @@ h4 {
 p {
 	font-family: Helvetica;
 	margin-bottom: 20px;
+
 }
 
 label {
 	font-weight: bold;
 }
 
-a { 
-	color: #019ab6;
-	text-decoration: none; 
+.links {
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	border: 0;
 }
-a:hover { color: #f04e52 }
+
+.links a { 
+	color: #977c46;
+	text-decoration: none;
+}
+.links a:hover { color: #f04e52 }
 
 div.field, div.actions {
 	margin-bottom: 10px;
@@ -131,3 +166,5 @@ li { text-indent: 20px;}
 	font-size: 12px;
 	list-style: square;
 }
+
+

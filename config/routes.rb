@@ -1,9 +1,12 @@
 Bryllupsside::Application.routes.draw do
   resources :greetings
   get 'pages/vielse'
-  get 'pages/om'
+  get 'pages/forlovere'
+  get 'pages/program'
+  get 'pages/toastmastere'
   get 'pages/info'
   get 'pages/liste'
+  get 'pages/selskapslokale'
 
   # The priority is based upon order of creation:
   #first created -> highest priority.
