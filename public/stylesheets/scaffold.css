@@ -3,6 +3,12 @@
 	margin: 0;
 }
 
+ul {
+text-align: left;
+padding: 10px;
+margin: 2px;
+}
+
 html {
 	font-family: Veranda;
 	font-size: 13px;
@@ -32,35 +38,31 @@ body {
 	padding-bottom: 30px;
 }
 
-table.center {
-	margin-left:auto; 
-	margin-right:auto;
+table{
+	width: 100%;
 }
 
-.om {
-	font-size: 12px;
-	/*font-weight: bold;*/
-	text-align: center;
+.textbox {
+	font-size: 16px;
+	text-align: justify;
 	display: block;
-	width: 300px;
-	border: 1px solid rgba(0, 0, 0, 0.07843);
-	/*background-color: #f7e7ce;*/
+	width: auto;
 	padding: 5px;
-	border-radius: 3px;
+}
+
+.hogre {
 	margin-left: 20px;
 }
-.innl {
-	font-size: 12px;
-	/*font-weight: bold;*/
-	text-align: center;
-	display: block;
-	width: 300px;
-	border: 1px solid rgba(0, 0, 0, 0.07843);
-	/*background-color: #f7e7ce;*/
-	padding: 5px;
-	border-radius: 3px;
+.venstre {
 	margin-bottom: 6px;
 	margin-right: 20px;
+}
+.fakta tr td:first-child {
+	text-align: left;
+	margin-right: 20px;	
+}
+.fakta tr td:last-child {
+	text-align: right;	
 }
 
 /*h2 {
