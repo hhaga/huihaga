@@ -5,8 +5,7 @@
 
 ul {
 text-align: left;
-padding: 10px;
-margin: 2px;
+
 }
 
 html {
@@ -113,7 +112,6 @@ h4 {
 }
 
 p {
-	font-family: Helvetica;
 	margin-bottom: 20px;
 
 }
@@ -127,6 +125,7 @@ label {
 	text-align: center;
 	font-size: 16px;
 	border: 0;
+	font-weight: bold;
 }
 
 .links a { 
@@ -167,7 +166,9 @@ textarea {
 	padding: 4px;
 }
 
-li { text-indent: 20px;}
+li { 
+	list-style: none;
+}
 
 #notice {
 	color: green;
