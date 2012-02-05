@@ -1,6 +1,6 @@
 class AddAuthorToGreeting < ActiveRecord::Migration
   def self.up
-    add_column :greetings, :author, :String
+    add_column :greetings, :author, :string
   end
 
   def self.down
