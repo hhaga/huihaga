@@ -59,7 +59,7 @@ table{
 	text-align: left;
 	margin-right: 20px;	
 }
-.fakta tr td:last-child {
+.fakta tr td:last-child, .overnatting tr td:last-child {
 	text-align: right;	
 }
 
@@ -165,7 +165,7 @@ textarea {
 	padding: 4px;
 }
 
-.noBullet { 
+li { 
 	list-style: none;
 }
 
@@ -206,6 +206,11 @@ textarea {
 #error_explanation ul li {
 	font-size: 12px;
 	list-style: square;
+}
+
+LI:Before
+{
+content: "- ";
 }
 
 
